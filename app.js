@@ -39,7 +39,7 @@ function multiply(a, b) {
 //testSum(4, 7);
 
 // Here is the test for multiply(); uncomment it to run it
- testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -52,12 +52,40 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c) {
+
+  var math1 = sum (a,b);
+
+  var sum1 = (math1[0]);
+
+  var total1 = sum (sum1,c);
+
+  var add = (total1[0]);
+  console.log(add);
+
+  var math2 = multiply (a,b);
+
+  var sum2 = (math2[0]);
+
+  var total2 = multiply (sum2,c);
+
+  var product = (total2[0]);
+  console.log(product);
+
+  var sumString = (a + ' and ' + b + ' and ' + c + ' sum to 16.');
+  console.log(sumString);
+
+  var productString = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is 140.');
+
+  return ([add, product, sumString, productString]);
 
 }
 
+//first array is sum of first 3 numbers
+//second array is product of those three numbers
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -96,7 +124,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
